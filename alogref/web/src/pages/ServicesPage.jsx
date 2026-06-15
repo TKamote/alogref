@@ -5,6 +5,7 @@ import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import ServiceCard from '@/components/ServiceCard.jsx';
 import { motion } from 'framer-motion';
+import { assetUrl } from '@/lib/utils';
 
 const ServicesPage = () => {
   const services = [
@@ -19,7 +20,7 @@ const ServicesPage = () => {
         'Technical support for component selection',
         'Quality assurance on all products'
       ],
-      image: '/services-parts.png'
+      image: assetUrl('services-parts.png')
     },
     {
       id: 'consultancy',
@@ -32,7 +33,7 @@ const ServicesPage = () => {
         'Vendor coordination and management',
         'Quality assurance and compliance verification'
       ],
-      image: '/services-consultancy.png'
+      image: assetUrl('services-consultancy.png')
     },
     {
       id: 'training',
@@ -45,7 +46,7 @@ const ServicesPage = () => {
         'Latest technology and best practices',
         'Ongoing support and resources'
       ],
-      image: '/services-training.png'
+      image: assetUrl('services-training.png')
     }
   ];
 

@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { assetUrl } from '@/lib/utils';
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <img
-                src="/logo.png"
+                src={assetUrl('logo.png')}
                 alt="Alog Refrigeration"
                 className="h-10 w-10 rounded-md object-cover object-left ring-1 ring-white/20"
               />

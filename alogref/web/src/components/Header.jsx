@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import { assetUrl } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Header = () => {
@@ -23,7 +24,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-3 group">
             <img
-              src="/logo.png"
+              src={assetUrl('logo.png')}
               alt="Alog Refrigeration"
               className="h-10 w-10 rounded-md object-cover object-left shadow-sm ring-1 ring-black/10 group-hover:ring-primary/40 transition-all duration-300"
             />

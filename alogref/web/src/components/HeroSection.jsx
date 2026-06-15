@@ -1,8 +1,11 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-const HERO_BACKGROUND = '/hero-background.png';
+import { assetUrl } from '@/lib/utils';
+
+const HERO_BACKGROUND = assetUrl('hero-background.png');
 
 const HeroSection = ({ 
   backgroundImage = HERO_BACKGROUND, 
@@ -56,20 +59,20 @@ const HeroSection = ({
               className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6"
             >
               {primaryCta && (
-                <a
-                  href={primaryCta.href}
+                <Link
+                  to={primaryCta.href}
                   className="hero-btn-primary"
                 >
                   {primaryCta.text}
-                </a>
+                </Link>
               )}
               {secondaryCta && (
-                <a
-                  href={secondaryCta.href}
+                <Link
+                  to={secondaryCta.href}
                   className="hero-btn-secondary"
                 >
                   {secondaryCta.text}
-                </a>
+                </Link>
               )}
             </motion.div>
           )}

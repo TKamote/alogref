@@ -6,6 +6,7 @@ import Footer from '@/components/Footer.jsx';
 import { Card, CardContent } from '@/components/ui/card';
 import { Award, Target, Zap, Shield } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { assetUrl } from '@/lib/utils';
 
 const AboutPage = () => {
   const values = [
@@ -86,7 +87,7 @@ const AboutPage = () => {
                   className="rounded-2xl overflow-hidden shadow-lg"
                 >
                   <img 
-                    src="/about-early-days.png" 
+                    src={assetUrl('about-early-days.png')} 
                     alt="Alog Refrigeration technician at an industrial refrigeration site"
                     className="w-full h-96 object-cover object-center"
                   />

@@ -284,7 +284,10 @@ logger.error = (msg, options) => {
 	loggerError(msg, options);
 }
 
+const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+
 export default defineConfig({
+	base: isGitHubPages ? '/alogref/' : '/',
 	optimizeDeps: {
 		include: allDeps,
 	},

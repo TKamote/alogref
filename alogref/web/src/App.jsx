@@ -9,8 +9,10 @@ import ContactPage from './pages/ContactPage.jsx';
 import { Toaster } from '@/components/ui/sonner';
 
 function App() {
+  const basename = import.meta.env.BASE_URL.replace(/\/$/, '');
+
   return (
-    <Router>
+    <Router basename={basename}>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
