@@ -5,6 +5,7 @@
 	"scripts": {
 		"dev": "concurrently --kill-others --raw \"npm run dev --prefix alogref/web\"",
 		"build": "concurrently --raw \"npm run build --prefix alogref/web\"",
+		"build:pages": "GITHUB_PAGES=true npm run build --prefix alogref/web && rm -rf docs && cp -r dist/web docs",
 		"start": "concurrently --kill-others --raw \"npm run start --prefix alogref/web\"",
 		"lint": "concurrently --raw \"npm run lint --prefix alogref/web\""
 	},
