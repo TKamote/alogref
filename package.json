@@ -1,0 +1,17 @@
+{
+	"name": "monorepo",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "concurrently --kill-others --raw \"npm run dev --prefix alogref/web\"",
+		"build": "concurrently --raw \"npm run build --prefix alogref/web\"",
+		"start": "concurrently --kill-others --raw \"npm run start --prefix alogref/web\"",
+		"lint": "concurrently --raw \"npm run lint --prefix alogref/web\""
+	},
+	"devDependencies": {
+		"concurrently": "^9.1.2"
+	},
+	"workspaces": [
+		"alogref/web"
+	]
+}
