@@ -13,8 +13,8 @@ const Footer = () => {
             <div className="flex items-center gap-3">
               <img
                 src={assetUrl('logo.png')}
-                alt="Alog Refrigeration"
-                className="h-10 w-10 rounded-md object-cover object-left ring-1 ring-white/20"
+                alt="Jerome Refrigeration Engineer"
+                className="h-12 w-12 object-contain shrink-0"
               />
               <span className="text-xl font-bold">Alog Refrigeration</span>
             </div>

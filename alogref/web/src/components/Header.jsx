@@ -25,8 +25,8 @@ const Header = () => {
           <Link to="/" className="flex items-center gap-3 group">
             <img
               src={assetUrl('logo.png')}
-              alt="Alog Refrigeration"
-              className="h-10 w-10 rounded-md object-cover object-left shadow-sm ring-1 ring-black/10 group-hover:ring-primary/40 transition-all duration-300"
+              alt="Jerome Refrigeration Engineer"
+              className="h-12 w-12 object-contain shrink-0 group-hover:scale-105 transition-transform duration-300"
             />
             <span className="text-xl font-bold text-primary">
               Alog Refrigeration
