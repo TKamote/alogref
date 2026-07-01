@@ -1,5 +1,2 @@
 ## Pages
-- [About us - Alog Refrigeration](/about): Learn about Alog Refrigeration
-- [Alog Refrigeration - Industrial refrigeration solutions and services](/home): Professional industrial refrigeration solutions including parts trading, consultancy, refrigeration system design, and specialist training for commercial and industrial clients.
-- [Contact us - Alog Refrigeration](/contact): Get in touch with Alog Refrigeration for industrial refrigeration solutions, consultancy, and training services. Contact our team today.
-- [Services - Alog Refrigeration](/services): Explore our comprehensive refrigeration services including parts trading, consultancy, and professional training programs.
+- [—](/cv): No description available
