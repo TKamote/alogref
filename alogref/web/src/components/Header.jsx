@@ -1,58 +1,48 @@
 
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { assetUrl } from '@/lib/utils';
+import { navSections, profile } from '@/content/profile';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const location = useLocation();
+  const { identity } = profile;
 
-  const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'Services', path: '/services' },
-    { name: 'About', path: '/about' },
-    { name: 'Contact', path: '/contact' }
-  ];
-
-  const isActive = (path) => location.pathname === path;
+  const scrollTo = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    setMobileMenuOpen(false);
+  };
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border shadow-sm">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center gap-3 group">
+          <button
+            type="button"
+            onClick={() => scrollTo('hero')}
+            className="flex items-center gap-3 group"
+          >
             <img
               src={assetUrl('logo.png')}
-              alt="Jerome Refrigeration Engineer"
-              className="h-12 w-12 object-contain shrink-0 group-hover:scale-105 transition-transform duration-300"
+              alt={identity.name}
+              className="h-10 w-10 object-contain shrink-0 group-hover:scale-105 transition-transform duration-300"
             />
-            <span className="text-xl font-bold text-primary">
-              Alog Refrigeration
+            <span className="text-lg font-bold text-primary hidden sm:block">
+              {identity.name.split(' ')[0]}
             </span>
-          </Link>
+          </button>
 
-          <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`relative text-sm font-medium transition-all duration-200 ${
-                  isActive(link.path)
-                    ? 'text-primary'
-                    : 'text-foreground hover:text-primary'
-                }`}
+          <div className="hidden md:flex items-center gap-6">
+            {navSections.map((link) => (
+              <button
+                key={link.id}
+                type="button"
+                onClick={() => scrollTo(link.id)}
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors duration-200"
               >
-                {link.name}
-                {isActive(link.path) && (
-                  <motion.div
-                    layoutId="activeNav"
-                    className="absolute -bottom-[21px] left-0 right-0 h-0.5 bg-primary"
-                    transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-                  />
-                )}
-              </Link>
+                {link.label}
+              </button>
             ))}
           </div>
 
@@ -75,20 +65,16 @@ const Header = () => {
             transition={{ duration: 0.2 }}
             className="md:hidden border-t border-border bg-white"
           >
-            <div className="px-4 py-4 space-y-2">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={`block px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-                    isActive(link.path)
-                      ? 'bg-primary text-primary-foreground'
-                      : 'text-foreground hover:bg-muted'
-                  }`}
+            <div className="px-4 py-4 space-y-1">
+              {navSections.map((link) => (
+                <button
+                  key={link.id}
+                  type="button"
+                  onClick={() => scrollTo(link.id)}
+                  className="block w-full text-left px-4 py-2 rounded-lg text-sm font-medium text-foreground hover:bg-muted transition-colors duration-200"
                 >
-                  {link.name}
-                </Link>
+                  {link.label}
+                </button>
               ))}
             </div>
           </motion.div>
