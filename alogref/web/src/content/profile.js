@@ -1,13 +1,13 @@
 export const profile = {
 	identity: {
 		name: 'Jerome Barnuevo Alog',
-		title: 'Refrigeration Sales Engineer',
+		title: 'Refrigeration Engineer',
 		tagline: '25+ years bridging industrial refrigeration expertise with commercial sales leadership across Asia Pacific and the Middle East.',
 		location: 'Singapore',
 		email: 'jerome.alog2025@gmail.com',
 		phone: '+65 8229 2965',
 		availability: 'Available immediately',
-		targetRole: 'Sales Engineer / Manager',
+		targetRole: 'Technical Sales Manager',
 	},
 
 	summary: `With over 25 years of experience in the refrigeration industry across industrial and commercial sectors, I bring a strong blend of technical expertise and sales leadership. I have a proven track record in driving revenue growth, expanding market share, and successfully representing company brands in highly competitive environments.
