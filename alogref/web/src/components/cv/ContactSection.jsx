@@ -46,7 +46,7 @@ const ContactSection = () => {
 								Send an email
 							</a>
 						</Button>
-						<Button asChild variant="outline" size="lg" className="border-slate-600 text-slate-200 hover:bg-slate-800">
+						<Button asChild variant="outline" size="lg" className="border-slate-600 bg-white text-slate-900 hover:bg-slate-100 hover:text-slate-900">
 							<a href={`mailto:${identity.email}?subject=CV%20Request&body=Please%20find%20my%20CV%20attached.`}>
 								<Download className="w-4 h-4 mr-2" />
 								Request CV

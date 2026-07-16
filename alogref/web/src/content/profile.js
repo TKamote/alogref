@@ -6,7 +6,7 @@ export const profile = {
 		location: 'Singapore',
 		email: 'jerome.alog2025@gmail.com',
 		phone: '+65 8229 2965',
-		availability: 'Available immediately',
+		availability: 'Not available',
 		targetRole: 'Technical Sales Manager',
 	},
 
@@ -89,7 +89,7 @@ With a strong technical foundation in mechanical refrigeration and control syste
 				'Delivered technical sales support, product training, and customer presentations.',
 			],
 			achievements: [
-				'Grew a €20M valves and controls business with ~25% year-on-year growth.',
+				'Grew a €25M valves and controls business with ~25% year-on-year growth.',
 				'Successfully introduced and scaled new product lines across the APAC region.',
 				'Played a key role in securing strategic projects through technical sales and negotiation.',
 			],
@@ -121,7 +121,7 @@ With a strong technical foundation in mechanical refrigeration and control syste
 			],
 			achievements: [
 				'Expanded Indonesia market through HASEGAWA compressor introduction.',
-				'Launched GT Technologies IR entity, generating RM 500K in first six months.',
+				'Launched GT Technologies IR entity, generating RM 1M in first six months.',
 			],
 		},
 		{
@@ -204,7 +204,7 @@ With a strong technical foundation in mechanical refrigeration and control syste
 
 	highlights: [
 		{
-			metric: '€20M',
+			metric: '€25M',
 			label: 'Business grown',
 			description: 'Valves and controls solutions with ~25% YoY growth at Danfoss APAC.',
 		},
@@ -214,7 +214,7 @@ With a strong technical foundation in mechanical refrigeration and control syste
 			description: 'Industrial and commercial refrigeration across APAC and Middle East.',
 		},
 		{
-			metric: 'RM 500K',
+			metric: 'RM 1M',
 			label: 'Revenue in 6 months',
 			description: 'Launched GT Technologies IR entity in Indonesia market.',
 		},

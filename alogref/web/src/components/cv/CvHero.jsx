@@ -68,7 +68,7 @@ const CvHero = () => {
 									Get in touch
 								</a>
 							</Button>
-							<Button asChild variant="outline" size="lg" className="border-slate-600 text-slate-200 hover:bg-slate-800">
+							<Button asChild variant="outline" size="lg" className="border-slate-600 bg-white text-slate-900 hover:bg-slate-100 hover:text-slate-900">
 								<a href="#contact">
 									<Download className="w-4 h-4 mr-2" />
 									Download CV
