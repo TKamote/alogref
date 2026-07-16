@@ -205,7 +205,7 @@ With a strong technical foundation in mechanical refrigeration and control syste
 	highlights: [
 		{
 			metric: '€25M',
-			label: 'Business grown',
+			label: 'Business growth',
 			description: 'Valves and controls solutions with ~25% YoY growth at Danfoss APAC.',
 		},
 		{
