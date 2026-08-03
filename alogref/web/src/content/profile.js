@@ -255,6 +255,10 @@ With a strong technical foundation in mechanical refrigeration and control syste
 		'Marine Refrigeration Systems',
 		'CO₂ & Ammonia Refrigeration Safety',
 	],
+
+	galleryImages: Array.from({ length: 49 }, (_, i) =>
+		`gallery/gallery-${String(i + 1).padStart(2, '0')}.jpg`
+	),
 };
 
 export const navSections = [
@@ -263,6 +267,7 @@ export const navSections = [
 	{ id: 'skills', label: 'Skills' },
 	{ id: 'highlights', label: 'Highlights' },
 	{ id: 'training', label: 'Training' },
+	{ id: 'gallery', label: 'Gallery' },
 	{ id: 'education', label: 'Education' },
 	{ id: 'contact', label: 'Contact' },
 ];

@@ -8,6 +8,7 @@ import ExperienceTimeline from '@/components/cv/ExperienceTimeline.jsx';
 import SkillGrid from '@/components/cv/SkillGrid.jsx';
 import HighlightCards from '@/components/cv/HighlightCards.jsx';
 import TrainingGallery from '@/components/cv/TrainingGallery.jsx';
+import PhotoGallery from '@/components/cv/PhotoGallery.jsx';
 import EducationSection from '@/components/cv/EducationSection.jsx';
 import ContactSection from '@/components/cv/ContactSection.jsx';
 import { profile } from '@/content/profile';
@@ -52,6 +53,7 @@ const CvPage = () => {
 					<SkillGrid />
 					<HighlightCards />
 					<TrainingGallery />
+					<PhotoGallery />
 					<EducationSection />
 					<ContactSection />
 				</main>

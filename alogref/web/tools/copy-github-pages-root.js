@@ -47,6 +47,17 @@ function copyAssets() {
 	}
 }
 
+function copyGallery() {
+	const srcGallery = path.join(buildDir, 'gallery');
+	const destGallery = path.join(repoRoot, 'gallery');
+	if (fs.existsSync(destGallery)) {
+		fs.rmSync(destGallery, { recursive: true, force: true });
+	}
+	if (fs.existsSync(srcGallery)) {
+		fs.cpSync(srcGallery, destGallery, { recursive: true });
+	}
+}
+
 if (!fs.existsSync(buildDir)) {
 	console.error('Build output not found at dist/web. Run build:pages first.');
 	process.exit(1);
@@ -57,6 +68,7 @@ for (const file of ROOT_SITE_FILES) {
 }
 
 copyAssets();
+copyGallery();
 fs.writeFileSync(path.join(repoRoot, '.nojekyll'), '');
 
 console.log('Copied GitHub Pages build to repository root.');
