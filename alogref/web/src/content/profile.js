@@ -256,7 +256,7 @@ With a strong technical foundation in mechanical refrigeration and control syste
 		'CO₂ & Ammonia Refrigeration Safety',
 	],
 
-	galleryImages: Array.from({ length: 49 }, (_, i) =>
+	galleryImages: Array.from({ length: 119 }, (_, i) =>
 		`gallery/gallery-${String(i + 1).padStart(2, '0')}.jpg`
 	),
 };
