@@ -78,6 +78,19 @@ With a strong technical foundation in mechanical refrigeration and control syste
 
 	experience: [
 		{
+			role: 'Technical Sales Manager',
+			company: 'AHT Cooling Systems GmbH',
+			location: 'Singapore',
+			period: 'Jun 2026 – Present',
+			highlights: [
+				'Build and maintain customer and distribution-partner relationships with professional business solutions.',
+				'Own project- and sales-related topics, including frequent customer and site visits and trade-show support.',
+				'Provide technical support, layout/product selection, and product training.',
+				'Align with APAC sales and HQ; develop regional sales/pricing strategy and demand forecasts.',
+				'Monitor competition and market trends; contribute to new product development for regional needs.',
+			],
+		},
+		{
 			role: 'Application & Sales Development Manager – Asia Pacific',
 			company: 'Danfoss Pte. Ltd.',
 			location: 'Singapore',
